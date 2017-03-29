@@ -4,9 +4,13 @@ body{
   font-family: 'Josefin Slab', serif;
   background-size: cover;
   margin:0;
-  padding-left:3%;  
-  padding-right:3%;
+  
 }  
+#top{
+    
+    padding-bottom: 3%;
+    padding-top:3%;
+}
 
 #header{
     width:10%;

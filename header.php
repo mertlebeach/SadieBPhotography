@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Playfair+Display" rel="stylesheet"></head>
  <body >
+    <div id= "top">
     <div id="header">
      <div id ="logo">
 	 <a id="anchorl" href="index.php"><div id ="logo1"> Sadie B</div> <div id = "logo2">Photography</div></a> 
@@ -22,4 +23,5 @@
         <li><a href="clients.php">clients</a></li>
        </ul>
      </div>
+    </div>
     </div>
