@@ -32,15 +32,15 @@ private $log;
     $conn = $this->getConnection();
     return $conn->query("select comment, date_entered, file_path from comment order by date_entered desc");
   }    
-  public function saveComment ($comment, $upload_location) {
-    $this->log->LogInfo("Saving comment: " . $comment);
-    $this->log->LogInfo("Saving filename: " . $upload_location);
+  public function save ($input, $email) {
+    $this->log->LogInfo("Saving email: " . $comment);
+    $this->log->LogInfo("Saving input: " . $input);
 
     $conn = $this->getConnection();
-    $saveQuery = "insert into comment (comment, user_id, file_path) values (:comment, 1,:upload_location)";
+    $saveQuery = "insert into inquiry (inquiry, email) values (:input, :email)";
     $q = $conn->prepare($saveQuery);
-    $q->bindParam(":comment", $comment);
-    $q->bindParam(":upload_location", $upload_location);
+    $q->bindParam(":email", $email);
+    $q->bindParam(":input", $input);
     $q->execute();
   }
 }
