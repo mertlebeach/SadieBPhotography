@@ -96,13 +96,12 @@ footer{
     /* background: #6cf; */
     margin:auto;
     text-align: center;
-    
+    position:absolute;
     width:100%; 
 }
 #foot{
     
     padding:none;
-    width:auto;
              background-color: rgba(128,128, 128, 0.3);
 
     width:auto;
