@@ -13,7 +13,7 @@ body{
 }
 
 #header{
-    width:10%;
+    width:20%;
     min-width:80px;
     max-width:250px;
     float:left;
@@ -102,13 +102,6 @@ footer{
     text-align: center;
     position:fixed;
     width:100%; 
-}
-#foot{
-    
-    padding:none;
-             background-color: rgba(128,128, 128, 0.3);
-
-    width:auto;
+                 background-color: rgba(128,128, 128, 0.3);
 
 }
- 
