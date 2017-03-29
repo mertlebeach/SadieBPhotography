@@ -4,10 +4,10 @@ require_once 'KLogger.php';
 
 class Dao {
     
-private $host = "us-cdbr-iron-east-03.cleardb.net"; 
-private $db = "heroku_2f4decd2ae70db4";
-private $user = "bfbdbf41253232";
-private $pass = "0950cb64";
+private $host = "localhost"; 
+private $db = "Heyo";
+private $user = "root";
+private $pass = "root";
 private $log;
 
   public function __construct () {
@@ -20,21 +20,22 @@ private $log;
       $conn = new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
             $this->pass);
     } catch (Exception $e) {
+      echo "issue with the connections";
       $this->log->LogFatal($e);
       exit;
     }
     $this->log->LogDebug("Got a database connection");
     return $conn;
   }
-
-  public function getComments () {
-    $this->log->LogInfo("Getting comments from db...");
-    $conn = $this->getConnection();
-    return $conn->query("select comment, date_entered, file_path from comment order by date_entered desc");
-  }    
+  
   public function save ($input, $email) {
-    $this->log->LogInfo("Saving email: " . $comment);
-    $this->log->LogInfo("Saving input: " . $input);
+              try{
+        $conn= $this->getConnection();
+        }catch(Exception $e){
+            echo e;
+        }
+    $this->log->LogInfo("Saving email: " . $input);
+    $this->log->LogInfo("Saving input: " . $email);
 
     $conn = $this->getConnection();
     $saveQuery = "insert into inquiry (inquiry, email) values (:input, :email)";
@@ -44,3 +45,4 @@ private $log;
     $q->execute();
   }
 }
+

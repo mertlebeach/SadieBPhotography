@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Dao.php';
+require_once 'classes/Dao.php';
 
 $dao=new Dao();
 
