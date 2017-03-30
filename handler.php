@@ -6,7 +6,7 @@
 
 
 $email= htmlentities($_POST['email']);
-$info= htmlentities($_POST['info']);
+$input= htmlentities($_POST['info']);
     
 
 
