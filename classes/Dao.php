@@ -20,7 +20,6 @@ private $log;
       $conn = new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
             $this->pass);
     } catch (Exception $e) {
-      echo "issue with the connections";
       $this->log->LogFatal($e);
       exit;
     }
@@ -28,14 +27,10 @@ private $log;
     return $conn;
   }
   
-  public function save ($input, $email) {
-              try{
-        $conn= $this->getConnection();
-        }catch(Exception $e){
-            echo e;
-        }
-    $this->log->LogInfo("Saving email: " . $input);
-    $this->log->LogInfo("Saving input: " . $email);
+  public function save ($email, $input) {
+ 
+    $this->log->LogInfo("Saving email: " . $email);
+    $this->log->LogInfo("Saving input: " . $input);
 
     $conn = $this->getConnection();
     $saveQuery = "insert into inquiry (inquiry, email) values (:input, :email)";
