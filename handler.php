@@ -7,7 +7,8 @@
 
 $email= htmlentities($_POST['email']);
 $info= htmlentities($_POST['info']);
-    
+$username= htmlentities($_POST['username']);
+$password= htmlentities($_POST['password']);    
 
 
   if (filter_var($email, FILTER_VALIDATE_EMAIL)!=true) {
