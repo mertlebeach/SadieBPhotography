@@ -7,7 +7,7 @@
 ?>
 <div class="contact">
     
-<form method="post" action="handler.php"  enctype="multipart/form-data">
+<form method="POST" action="handler.php">
      <label for="email"> Enter your email:</label>
 
     <input type = "text"  id ="email" value="<?php echo $_SESSION['inputs']['email']; ?>" name = "email">
