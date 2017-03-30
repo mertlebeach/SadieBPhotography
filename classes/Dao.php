@@ -28,11 +28,11 @@ private $log;
     return $conn;
   }
   
-  public function save ($email, $input) {
+  public function save($email, $input) {
  
     $this->log->LogInfo("Saving email: " . $email);
     $this->log->LogInfo("Saving input: " . $input);
-
+      echo($email);
     $conn = $this->getConnection();
     $saveQuery = "insert into inquiry (inquiry, email) values (:input, :email)";
     $q = $conn->prepare($saveQuery);
