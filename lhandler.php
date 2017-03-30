@@ -15,7 +15,7 @@ $password= htmlentities($_POST['password']);
     $_SESSION['mtype'] = 'bad';
     $_SESSION['inputs'] = $_POST;
   
-    header("Location:contact.php");
+    header("Location:clients.php");
  
     exit;
   } else {
@@ -25,8 +25,8 @@ $password= htmlentities($_POST['password']);
   }
 
 
-    $dao->save($email,$input);
+    $dao->is_password_correct($username,$password);
 
-header("Location:contact.php");
+header("Location:clients.php");
 
 exit;
