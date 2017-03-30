@@ -4,14 +4,12 @@
 <div class="clients">
  
 
-  <form method="POST" action="lhandler.php"  enctype="multipart/form-data">
-    <div>
-    <label for="comment">Username</label>
-    <input type="text" id="login" value="<?php echo $_SESSION['inputs']['password']; ?> " name="username">
-        
+  <form method="POST" action="handler.php"  enctype="multipart/form-data">
+     <label for="comment">Username:</label>
+    <input type="text" id="username" value="<?php echo $_SESSION['inputs']['username']; ?> " name="username">
+        Password:
         <input type="text" id="password" name="password" value="<?php echo $_SESSION['inputs']['password']; ?>">
-    Upload an impage
-    <input type="file" name="pic" accept="image/*">
+ 
     <input type="submit">
   </form>
   <?php
@@ -22,6 +20,7 @@
       unset($_SESSION['message']);
       unset($_SESSION['inputs']);
     ?>
+       <?php } ?>
   </div>
 </div>
 <?php
