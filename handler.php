@@ -31,4 +31,4 @@ $password= htmlentities($_POST['password']);
 
 header("Location:contact.php");
 
-exit;
+end;
