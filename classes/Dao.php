@@ -102,10 +102,9 @@ public function getComments () {
       return FALSE;
       }
     public function ensure_logged_in(){
-        if(!isset($_SESSION["name"])){
+        if(!isset($_SESSION['name'])){
             header("Location:clients.php");
-            die;
-            
+            die;            
         }
     }
 }

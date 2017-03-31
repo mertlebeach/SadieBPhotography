@@ -1,7 +1,7 @@
 <?php
     
   include("header1.php");
-
+$dao->ensure_logged_in();
 
 ?>
 <div class="clients">
