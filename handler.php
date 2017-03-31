@@ -28,6 +28,6 @@ echo("heyo");
 //
 //    $dao->save($email,$input);
 
-header("Location:contact.php");
+//header("Location:contact.php");
 
 exit;
