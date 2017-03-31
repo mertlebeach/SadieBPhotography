@@ -4,6 +4,8 @@
   require_once 'classes/Dao.php';
   $dao = new Dao();
 
+
+echo("hello!!! WHy aren't you there");
   
 $username= htmlentities($_POST['username']);
 $password= htmlentities($_POST['password']);    
