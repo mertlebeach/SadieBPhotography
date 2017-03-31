@@ -10,12 +10,31 @@ $username= htmlentities($_POST['username']);
 $password= htmlentities($_POST['password']);    
 
 
+  if ($dao-> does_username_exist($username)) {
+ 
+      if( $dao->is_password_correct($username,$password)){
+           unset($_SESSION['inputs']);
 
+        $_SESSION['mtype'] = 'good';
+  
+        header("Location:inquiries.php"); 
+           exit;
+      }
+             $_SESSION['message'] = "Wrong password.";
+    $_SESSION['mtype'] = 'bad';
+              $_SESSION['inputs'] = $_POST;
 
-    $dao->is_password_correct($username,$password);
+ 
+   
+  } else {
+    $_SESSION['message'] = "Wrong username and/or password.";
+    $_SESSION['mtype'] = 'bad';
+              $_SESSION['inputs'] = $_POST;
 
-   $dao-> does_username_exist($username);
+  }
 
-header("Location:inquiries.php");
+ 
+
+header("Location:clients.php");
 
 exit;

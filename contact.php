@@ -18,15 +18,14 @@
     <input type="submit">   
     </form>
   <?php
-  if (isset($_SESSION['message'])) { 
- 
+  if (isset($_SESSION['message'])) {?>
+  <div id="message" class="<?php echo $_SESSION['mtype']; ?>">
+    <?php
       echo $_SESSION['message'];
       unset($_SESSION['message']);
       unset($_SESSION['inputs']);
-     } ?>
-    
-    </div>
-    
+    ?>
+       <?php } ?>
     
     
  
