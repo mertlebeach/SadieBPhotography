@@ -16,6 +16,6 @@ $password= htmlentities($_POST['password']);
 
    $dao-> does_username_exist($username);
 
-//header("Location:clients.php");
+header("Location:inquiries.php");
 
 exit;

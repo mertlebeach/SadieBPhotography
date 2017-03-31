@@ -47,14 +47,20 @@ class Dao {
     $q->bindParam(":input", $input);
     $q->execute();
   }
+public function getComments () {
+    $this->log->LogInfo("Getting comments from db...");
+    $conn = $this->getConnection();
+    return $conn->query("select email, inquiry from inquiry ");
+  }
+
    public function does_username_exist($username){
       
       $conn= $this->getConnection();
      //$username = mysqli_real_escape_string($username);
-     // $username = preg_replace('/\s+/','',$username);
+      $username = preg_replace('/\s+/','',$username);
 
       $name = $conn->quote($username);
-     echo("SELECT username FROM login WHERE username = ".$name );
+//     echo("SELECT username FROM login WHERE username = ".$name );
        $rows=$conn->query("SELECT username FROM login WHERE username = ".$name  );
  
        if($rows){
@@ -62,7 +68,7 @@ class Dao {
              foreach($rows as $row){
 
                 if ($username === $row["username"]){
-                    echo("yay!");
+ //                   echo("yay!");
                       return TRUE;
 
                 }
@@ -78,7 +84,7 @@ class Dao {
       $username = preg_replace('/\s+/','',$username);
 
       $name = $conn->quote($username);
-     echo("SELECT password FROM login WHERE username = ".$name );
+//     echo("SELECT password FROM login WHERE username = ".$name );
 
       $rows=$conn->query("SELECT password FROM login WHERE username = ".$name  );
  
@@ -87,7 +93,7 @@ class Dao {
              foreach($rows as $row){
 
                 if ($password === $row["password"]){
-                    echo("hey");
+   //                 echo("hey");
                      return TRUE;
 
                 }

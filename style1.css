@@ -18,6 +18,10 @@ body{
     padding-bottom:10px;
 
 }
+table tbody tr td {
+  border: 1px black solid;
+  padding: 5 5;
+}
 #logo{
    width: 100%;  
    font-weight: lighter;
