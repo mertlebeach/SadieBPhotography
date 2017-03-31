@@ -17,7 +17,7 @@
   </form>
   <?php
   if (isset($_SESSION['message'])) {?>
-  <div id="message" class="<?php echo $_SESSION['mtype']; ?>">
+  <span id="message" class="<?php echo $_SESSION['mtype']; ?>">
     <?php
       echo $_SESSION['message'];
       unset($_SESSION['message']);
