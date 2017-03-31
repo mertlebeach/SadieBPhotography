@@ -14,8 +14,8 @@ $password= htmlentities($_POST['password']);
 
     $dao->is_password_correct($username,$password);
 
- //   $dao-> does_username_exist($username);
+   $dao-> does_username_exist($username);
 
-header("Location:clients.php");
+//header("Location:clients.php");
 
 exit;
