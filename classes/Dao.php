@@ -78,7 +78,8 @@ class Dao {
     //  $username = preg_replace('/\s+/','',$username);
 
       $name = $conn->quote($username);
- 
+     echo("SELECT password FROM login WHERE username = ".$name );
+
       $rows=$conn->query("SELECT password FROM login WHERE username = ".$name  );
  
        if($rows){
