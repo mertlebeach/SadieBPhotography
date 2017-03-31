@@ -24,7 +24,7 @@
       unset($_SESSION['inputs']);
     ?>
        <?php } ?>
-  </div>
+  </span>
 </div>
 <?php
     include('footer.php');
