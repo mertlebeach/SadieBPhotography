@@ -10,8 +10,7 @@ class Dao {
       private $user = "bfbdbf41253232";
       private $pass = "0950cb64";
     
- 
-   
+    
 //      private $host = "localhost";
 //      private $db = "Heyo";
 //      private $user = "root";
@@ -52,7 +51,7 @@ class Dao {
       
       $conn= $this->getConnection();
      //$username = mysqli_real_escape_string($username);
-
+       echo("hey");
       $username = preg_replace('/\s+/','',$username);
 
       $name = $conn->quote($username);
