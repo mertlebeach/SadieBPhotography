@@ -51,7 +51,6 @@ class Dao {
       
       $conn= $this->getConnection();
      //$username = mysqli_real_escape_string($username);
-       echo("hey");
       $username = preg_replace('/\s+/','',$username);
 
       $name = $conn->quote($username);
