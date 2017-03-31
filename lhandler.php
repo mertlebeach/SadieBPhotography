@@ -2,7 +2,8 @@
   session_start();
   
 
-
+  require_once 'classes/Dao.php';
+  $gao = new Dao();
 //echo("hello!!! WHy aren't you there");
 
 
@@ -12,9 +13,9 @@ $password= htmlentities($_POST['password']);
 
 
 
-    $dao->is_password_correct($username,$password);
+    $gao->is_password_correct($username,$password);
 
-    $dao-> does_username_exist($username);
+    $gao-> does_username_exist($username);
 
 header("Location:clients.php");
 
