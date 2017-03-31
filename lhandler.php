@@ -4,7 +4,7 @@
 
   require_once 'classes/Dao.php';
   $gao = new Dao();
-//echo("hello!!! WHy aren't you there");
+echo("hello!!! WHy aren't you there");
 
 
 $username= htmlentities($_POST['username']);
