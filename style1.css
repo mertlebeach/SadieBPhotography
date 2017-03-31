@@ -192,12 +192,4 @@ footer{
 .footclass>li>a:hover{
     color:dimgray;
 }
-.good {
-  background-color:#7FCA9F;
 
-  
-}
-
-.bad {
-  background-color:  #E96D63;
-}

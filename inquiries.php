@@ -1,12 +1,11 @@
 <?php
-
+    
   include("header1.php");
-  require_once 'classes/Dao.php';
-  require_once 'classes/Render.php';
-  $dao = new Dao();
+
+
 ?>
 <div class="clients">
- 
+  <h1> <?php echo($_SESSION["name"]);?></h1>
   <h1>Inquires</h1>
    <?php Render::renderTable($dao->getComments()); ?>
 

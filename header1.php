@@ -1,4 +1,7 @@
 <?php
+  require_once 'classes/Dao.php';
+  require_once 'classes/Render.php';
+  $dao = new Dao();
     session_start();
 ?>
 <html>
@@ -18,6 +21,15 @@
      </div>
      <div id = "nav">
       <ul class="nav-class">
+            <?php
+  if (isset($_SESSION['name'])) {?>
+  <li id="message" class="welcome_message">
+    <?php
+      echo ("Welcome ".$_SESSION['name'] . " !");
+
+    ?>
+       <?php } ?>
+  </li>
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="details.php">about</a></li>
 	    <li><a href="contact.php">contact</a></li>
