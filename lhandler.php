@@ -1,9 +1,9 @@
 <?php
-  session_start();
+ // session_start();
 echo("hello!!! WHy aren't you there");
   
-  require_once 'classes/Dao.php';
-  $dao = new Dao();
+//  require_once 'classes/Dao.php';
+//  $dao = new Dao();
 
 
 
