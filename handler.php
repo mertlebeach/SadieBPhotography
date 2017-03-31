@@ -3,31 +3,30 @@
 
   require_once 'classes/Dao.php';
   $dao = new Dao();
-echo("heyo");
 
-//$email= htmlentities($_POST['email']);
-//$input= htmlentities($_POST['info']);
-//    
-//
-//
-//  if (filter_var($email, FILTER_VALIDATE_EMAIL)!=true) {
-//    $_SESSION['message'] = "Invalid email: Please try again!";
-//      
-//    $_SESSION['mtype'] = 'bad';
-//    $_SESSION['inputs'] = $_POST;
-//  
-//    header("Location:contact.php");
-// 
-//    exit;
-//  } else {
-//    unset($_SESSION['inputs']);
-//    $_SESSION['message'] = "Thanks for your inquiry! We will get back to you as soon as possible!";
-//    $_SESSION['mtype'] = 'good';
-//  }
-//
-//
-//    $dao->save($email,$input);
+$email= htmlentities($_POST['email']);
+$input= htmlentities($_POST['info']);
+    
 
-//header("Location:contact.php");
+
+  if (filter_var($email, FILTER_VALIDATE_EMAIL)!=true) {
+    $_SESSION['message'] = "Invalid email: Please try again!";
+      
+    $_SESSION['mtype'] = 'bad';
+    $_SESSION['inputs'] = $_POST;
+  
+    header("Location:contact.php");
+ 
+    exit;
+  } else {
+    unset($_SESSION['inputs']);
+    $_SESSION['message'] = "Thanks for your inquiry! We will get back to you as soon as possible!";
+    $_SESSION['mtype'] = 'good';
+  }
+
+
+    $dao->save($email,$input);
+
+header("Location:contact.php");
 
 exit;

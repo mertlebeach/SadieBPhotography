@@ -70,29 +70,30 @@ class Dao {
 //       }
 //      return FALSE;
 //   }   
-//  public function is_password_correct($username, $password){
-//      
-//      $conn= $this->getConnection();
-//     //$username = mysqli_real_escape_string($username);
-//
-//    //  $username = preg_replace('/\s+/','',$username);
-//
-//      $name = $conn->quote($username);
-// 
-//      $rows=$conn->query("SELECT password FROM login WHERE username = ".$name  );
-// 
-//       if($rows){
-//        
-//             foreach($rows as $row){
-//
-//                if ($password === $row["password"]){
-//                     return TRUE;
-//
-//                }
-//            }
-//       }
-//      return FALSE;
-//      }
+  public function is_password_correct($username, $password){
+      
+      $conn= $this->getConnection();
+     //$username = mysqli_real_escape_string($username);
+
+    //  $username = preg_replace('/\s+/','',$username);
+
+      $name = $conn->quote($username);
+ 
+      $rows=$conn->query("SELECT password FROM login WHERE username = ".$name  );
+ 
+       if($rows){
+        
+             foreach($rows as $row){
+
+                if ($password === $row["password"]){
+                    echo("hey");
+                     return TRUE;
+
+                }
+            }
+       }
+      return FALSE;
+      }
     
 }
 
