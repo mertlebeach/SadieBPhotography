@@ -47,52 +47,7 @@ class Dao {
     $q->bindParam(":input", $input);
     $q->execute();
   }
-   public function does_username_exist($username){
-      
-      $conn= $this->getConnection();
-     //$username = mysqli_real_escape_string($username);
-      $username = preg_replace('/\s+/','',$username);
 
-      $name = $conn->quote($username);
-       echo("SELECT username FROM login WHERE username = ".$name );
-       $rows=$conn->query("SELECT username FROM login WHERE username = ".$name  );
- 
-       if($rows){
-        
-             foreach($rows as $row){
-
-                if ($username === $row["username"]){
-                    echo("yay!");
-                      return TRUE;
-
-                }
-            }
-       }
-      return FALSE;
-      }   
-  public function is_password_correct($username, $password){
-      
-      $conn= $this->getConnection();
-     //$username = mysqli_real_escape_string($username);
-
-      $username = preg_replace('/\s+/','',$username);
-
-      $name = $conn->quote($username);
- 
-      $rows=$conn->query("SELECT password FROM login WHERE username = ".$name  );
- 
-       if($rows){
-        
-             foreach($rows as $row){
-
-                if ($password === $row["password"]){
-                     return TRUE;
-
-                }
-            }
-       }
-      return FALSE;
-      }
     
 }
 
