@@ -10,7 +10,6 @@ $password= htmlentities($_POST['password']);
 
 
 
-       echo("hey");
 
     $dao->is_password_correct($username,$password);
 
