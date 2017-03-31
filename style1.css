@@ -193,10 +193,11 @@ footer{
     color:dimgray;
 }
 .good {
-  background-color: #355e3b;
+  background-color:#7FCA9F;
+
   
 }
 
 .bad {
-  background-color: #aa3311;
+  background-color:  #E96D63;
 }
