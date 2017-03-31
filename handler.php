@@ -3,7 +3,7 @@
 
   require_once 'classes/Dao.php';
   $dao = new Dao();
-
+echo("heyo");
 
 $email= htmlentities($_POST['email']);
 $input= htmlentities($_POST['info']);
