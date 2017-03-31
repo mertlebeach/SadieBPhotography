@@ -75,7 +75,7 @@ class Dao {
       $conn= $this->getConnection();
      //$username = mysqli_real_escape_string($username);
 
-    //  $username = preg_replace('/\s+/','',$username);
+      $username = preg_replace('/\s+/','',$username);
 
       $name = $conn->quote($username);
      echo("SELECT password FROM login WHERE username = ".$name );
