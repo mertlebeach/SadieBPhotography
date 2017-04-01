@@ -104,6 +104,7 @@ public function getComments () {
     public function ensure_logged_in(){
         if(!isset($_SESSION['name'])){
             header("Location:clients.php");
+
             die;            
         }
     }
