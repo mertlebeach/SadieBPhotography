@@ -25,7 +25,7 @@
   if (isset($_SESSION['name'])) {?>
   <li id="message" class="welcome_message">
     <?php
-      echo ("Welcome ".$_SESSION['name'] . "!");
+      echo ("Welcome ".$_SESSION['name']."!");
 
     ?>
        <?php } ?>
