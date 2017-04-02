@@ -31,8 +31,9 @@ table tbody tr td {
     
 }
 #logo1{
-    font-family: 'Amatic SC', cursive; font-size:55px;font-weight:lighter;
-    text-align: center}
+    font-family: 'Amatic SC', cursive; font-size:55px;
+    font-weight:lighter;
+    text-align: center;}
 #logo2{
     font-family: 'Amatic SC', cursive;
     font-size: 130%;
@@ -66,8 +67,7 @@ ul{
     border-color:#D3D3D3;
      border-width: 0 0 1px 0;
     border-radius: 2px;
-    //box-shadow: 0 2px 1px  #888888;
-} 
+ } 
 .nav-class{
     margin:0;
 }
@@ -84,10 +84,10 @@ a{
     text-align: center;
 }
 a:hover{
-	color: e0ffff;
+	color: #e0ffff;
 }
 #anchorl{
-	color:e0ffff;
+	color:#e0ffff;
 }
 #anchorl:hover{
 	color:whitesmoke;
@@ -99,14 +99,7 @@ a:hover{
     min-width:222px;
     float: right;
 }
-/*
-#image1{
-    float:right;
-}
-#image2{
-    float:left;
-}
-*/
+ 
 .imagegallery{ 
     float:right;
      max-width:80%;
