@@ -23,7 +23,7 @@
       <ul class="nav-class">
             <?php
   if (isset($_SESSION['name'])) {?>
-  <li id="message" class="welcome_message">
+  <li id="welcome_message" >
     <?php
       echo ("Welcome ".$_SESSION['name']."!");
 

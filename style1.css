@@ -6,8 +6,8 @@ body{
     padding-left:3%;
     padding-right:3%;
  }
-#message{
-    color:grey;
+#welcome_message{
+    color:darkcyan;
 }
 #header{
     width:20%;
