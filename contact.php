@@ -1,8 +1,7 @@
 <?php
 
   include("header1.php");
-  require_once 'classes/Dao.php';
-  $dao = new Dao();
+ 
  
 ?>
 <div class="contact">
