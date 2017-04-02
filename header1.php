@@ -33,8 +33,11 @@
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="details.php">about</a></li>
 	    <li><a href="contact.php">contact</a></li>
-        <li><a href="clients.php">admin login</a></li>
             <?php
+  if (!isset($_SESSION['name'])) {?>
+         <li><a href="clients.php">admin login</a></li>
+
+       <?php } ?>            <?php
   if (isset($_SESSION['name'])) {?>
        <li><a href="inquiries.php">inquiries</a></li>
 
