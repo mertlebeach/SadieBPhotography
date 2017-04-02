@@ -6,7 +6,9 @@ body{
     padding-left:3%;
     padding-right:3%;
  }
-
+#message{
+    color:grey;
+}
 #header{
     width:20%;
     min-width:80px; 
@@ -174,9 +176,7 @@ a:hover{
      
      max-width:100%;
 }
-#message{
-    color:aquamarine;
-}
+
 #linktogallery{
     color:gray;
 }
