@@ -9,7 +9,7 @@
   <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">  
-	<link rel="stylesheet" type = "text/css" href = "style.css">	
+	<link rel="stylesheet" type = "text/css" href = "style1.css">	
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
 	<link href='//fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
