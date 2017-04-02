@@ -12,7 +12,7 @@ body{
     padding-right:3%;
 }
 #welcome_message{
-    color:blanchedalmond;
+    color:beige;
 }
 #header{
     width:20%;
@@ -91,7 +91,7 @@ a:hover{
 	color:e0ffff;
 }
 #anchorl:hover{
-	color:blanchedalmond;
+	color:beige;
 }
 footer{      
     bottom: 0; 
