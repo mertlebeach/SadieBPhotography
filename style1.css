@@ -7,7 +7,7 @@ body{
     padding-right:3%;
  }
 #welcome_message{
-    color:darkcyan;
+    color:blanchedalmond;
 }
 #header{
     width:20%;
@@ -90,7 +90,7 @@ a:hover{
 	color:#e0ffff;
 }
 #anchorl:hover{
-	color:whitesmoke;
+	color:blanchedalmond;
 }
 
 .imagegallery>div{ 
