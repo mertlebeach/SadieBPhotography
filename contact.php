@@ -28,6 +28,7 @@
     
     
    </span>
+</div>
 
 <?php
     include('footer.php');
