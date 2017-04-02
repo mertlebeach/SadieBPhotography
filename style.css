@@ -92,7 +92,9 @@ a:hover{
 #anchorl:hover{
 	color:blanchedalmond;
 }
-
+#message{
+    color:aquamarine;
+}
 footer{      
     bottom: 0; 
     /* width: 100%; */
