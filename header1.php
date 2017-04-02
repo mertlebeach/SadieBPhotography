@@ -36,6 +36,8 @@
         <li><a href="clients.php">admin login</a></li>
             <?php
   if (isset($_SESSION['name'])) {?>
+       <li><a href="inquiries.php">inquiries</a></li>
+
   <form id="logout" action="logout.php" method="post" class="logout">
     <?php
         
