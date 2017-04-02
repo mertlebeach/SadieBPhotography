@@ -15,7 +15,7 @@ $password= htmlentities($_POST['password']);
  
       if( $dao->is_password_correct($username,$password)){
  
-        $_SESSION['mtype'] = 'good';
+        $_SESSION['mtype'] = "good";
         $_SESSION['name'] = $username;
   
         header("Location:inquiries.php"); 
@@ -29,7 +29,7 @@ $password= htmlentities($_POST['password']);
    
   } else {
     $_SESSION['message'] = "Wrong username and/or password.";
-    $_SESSION['mtype'] = 'bad';
+    $_SESSION['mtype'] = "bad";
     $_SESSION['inputs'] = $_POST;
 
   }

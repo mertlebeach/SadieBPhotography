@@ -33,7 +33,7 @@
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="details.php">about</a></li>
 	    <li><a href="contact.php">contact</a></li>
-        <li><a href="clients.php">clients</a></li>
+        <li><a href="clients.php">admin login</a></li>
             <?php
   if (isset($_SESSION['name'])) {?>
   <form id="logout" action="logout.php" method="post" class="logout">

@@ -11,7 +11,7 @@
      <label for="comment">Username:</label>
     <input type="text" id="username" value="<?php echo $_SESSION['inputs']['username']; ?> " name="username">
         Password:
-        <input type="text" id="password" name="password" value="<?php echo $_SESSION['inputs']['password']; ?>">
+        <input type="password" id="password" name="password" value="<?php echo $_SESSION['inputs']['password']; ?>">
  
     <input type="submit" value="Log in">
   </form>

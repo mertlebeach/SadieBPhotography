@@ -12,7 +12,7 @@ $input= htmlentities($_POST['info']);
   if (filter_var($email, FILTER_VALIDATE_EMAIL)!=true) {
     $_SESSION['message'] = "Invalid email: Please try again!";
       
-    $_SESSION['mtype'] = 'bad';
+    $_SESSION['mtype'] = "bad";
     $_SESSION['inputs'] = $_POST;
   
     header("Location:contact.php");
@@ -21,7 +21,7 @@ $input= htmlentities($_POST['info']);
   } else {
     unset($_SESSION['inputs']);
     $_SESSION['message'] = "Thanks for your inquiry! We will get back to you as soon as possible!";
-    $_SESSION['mtype'] = 'good';
+    $_SESSION['mtype'] = "good";
   }
 
 

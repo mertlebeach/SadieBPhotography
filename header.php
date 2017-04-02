@@ -1,4 +1,9 @@
-
+<?php
+  require_once 'classes/Dao.php';
+  require_once 'classes/Render.php';
+  $dao = new Dao();
+    session_start();
+?>
 <html>
 
   <head>
@@ -16,11 +21,28 @@
 	 <a id="anchorl" href="index.php"><div id ="logo1"> Sadie B</div> <div id = "logo2">Photography</div></a> 
      </div>
      <div id = "nav">
-      <ul class="nav-class">
+                 <ul class="nav-class">
+            <?php
+  if (isset($_SESSION['name'])) {?>
+  <li id="message" class="welcome_message">
+    <?php
+      echo ("Welcome ".$_SESSION['name'] . " !");
+
+    ?>
+       <?php } ?>
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="details.php">about</a></li>
 	<li><a href="contact.php">contact</a></li>
-        <li><a href="clients.php">clients</a></li>
+        <li><a href="clients.php">admin login</a></li>
+            <?php
+  if (isset($_SESSION['name'])) {?>
+  <form id="logout" action="logout.php" method="post" class="logout">
+    <?php
+        
+    ?>
+      <input type ="submit" value="Log out"/>
+       <?php } ?>
+  </form>
        </ul>
      </div>
     </div>
