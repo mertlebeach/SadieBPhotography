@@ -16,7 +16,7 @@ body{
 
     float:left;
     box-shadow: 0 2px 3px  #888888;
-    background-color: rgba(128,128, 128, 1);
+    background-color: rgba(0,128, 128, 1);
     padding-bottom:10px;
 
 }
