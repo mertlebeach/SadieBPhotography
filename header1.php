@@ -7,6 +7,10 @@
 <html>
 
   <head>
+             <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+                   <script type="text/javascript" src="js/valid.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">  
 	<link rel="stylesheet" type = "text/css" href = "style1.css">	
@@ -40,6 +44,10 @@
        <?php } ?>            <?php
   if (isset($_SESSION['name'])) {?>
        <li><a href="inquiries.php">inquiries</a></li>
+ 
+          
+          
+
 
   <form id="logout" action="logout.php" method="post" class="logout">
     <?php

@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
 	<link href='//fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+             <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Playfair+Display" rel="stylesheet"></head>
  <body >
     <div id= "top">
