@@ -5,28 +5,47 @@
     session_start();
 ?>
 <html>
+  
 
   <head>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type = "text/css" href = "style.css">	
+    <!--STYLE SHEETS!-->
+	<link rel="stylesheet" type = "text/css" href = "css/style.css">	
+    <link rel="stylesheet" type = "text/css" href = "css/normalize.css"> 
+	<link rel="stylesheet" type = "text/css" href = "css/component.css">
+<!--FONTS!-->
+
+
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
 	<link href='//fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-             <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Playfair+Display" rel="stylesheet">
+       
+          <!--JAVASCRIPT!-->
 
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Playfair+Display" rel="stylesheet"></head>
- <body >
-    <div id= "top">
+             <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type ="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+      <script type ="text/javascript" src="js/main.js"></script>
+      <script type ="text/javascript" src="js/anime.min.js"></script>
+             <script type="text/javascript" src="js/valid.js"></script>
+    
+  
+    
+    </head>
+
+
+ <body>
+     <div id= "top">
     <div id="header">
      <div id ="logo">
 	 <a id="anchorl" href="index.php"><div id ="logo1"> Sadie B</div> <div id = "logo2">Photography</div></a> 
      </div>
-     <div id = "nav">
+     <div class = "nav">
                  <ul class="nav-class">
             <?php
   if (isset($_SESSION['name'])) {?>
-  <li id="welcome_message">
+  <li class="welcome_message">
     <?php
       echo ("welcome ".$_SESSION['name']."!");
 
@@ -51,7 +70,47 @@
       <input type ="submit" value="Log out"/>
        <?php } ?>
   </form>
+                     
        </ul>
      </div>
+
     </div>
     </div>
+    
+      <div class= "segmenter" style="background-image: url('background-14.jpg')"> </div>
+     		<script>
+		(function() {
+            var 
+			     segmenter = new Segmenter(document.querySelector('.segmenter'), {
+					pieces: 8,
+					positions: [
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100}
+					],
+					shadows: false,
+					parallax: true,
+					parallaxMovement: {min: 10, max: 30},
+					animation: {
+						duration: 2500,
+						easing: 'easeOutExpo',
+						delay: 0,
+						opacity: .1,
+						translateZ: {min: 10, max: 25}
+					},
+	                onReady: function() { 
+							segmenter.animate();
+						 
+						 
+					}
+                
+                  
+             });   
+		})();
+		</script>
+
