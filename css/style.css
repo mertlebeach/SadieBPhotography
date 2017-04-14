@@ -1,0 +1,118 @@
+
+body{
+/*  background: url("background-5.jpg") no-repeat center center fixed; */
+	font-family: 'Roboto', 'Avenir Next', sans-serif; /* background-size: cover;
+  margin:0;*/
+  
+}  
+#top{
+    margin:0;
+    padding-left: 3%;
+    padding-right:3%;
+        position:absolute;
+    z-index: 50;
+
+}
+.welcome_message{
+    color:beige;
+}
+#header{
+     min-width:80px;
+    max-width:250px;
+    float:left;
+    box-shadow: 0 2px 3px  #888888;
+    background-color: rgba(128,128, 128, 0.5);
+    padding-bottom:10px;
+    
+
+
+
+}
+#logo{
+   width: 100%;  
+   font-weight: lighter;
+   padding-bottom:10px;
+    
+}
+#logo1{
+    	font-family: 'Roboto', 'Avenir Next', sans-serif;
+ font-size:55px;font-weight:lighter;
+    text-align: center;}
+#logo2{
+   	font-family: 'Roboto', 'Avenir Next', sans-serif;
+
+    font-size: 130%;
+    /* font-style: initial; */
+    font-weight: lighter;
+    text-align: center;
+}
+ul{
+
+padding:0;
+
+} 
+.nav{
+    margin:auto;
+    width:100%;
+    margin: 0 auto;
+	font-size: 130%;
+    font-weight:lighter;
+    text-align: center; 
+} 
+ul{
+
+	list-style-type: none;
+}
+.nav-class>li{
+    padding  : 5px;
+    width:90%;
+    display:inline-block;
+    border-style:inset;
+    border-color:#D3D3D3;
+     border-width: 0 0 1px 0;
+    border-radius: 2px;
+ } 
+.nav-class{
+    margin:0;
+}
+.footclass>li{
+    display:inline-block;}
+.footclass>a{
+ 
+display:inline-block;}
+
+a{
+    
+	text-decoration: none;
+    color:black;
+    text-align: center;
+}
+a:hover{
+	color: e0ffff;
+}
+#anchorl{
+	color:e0ffff;
+}
+#anchorl:hover{
+	color:beige;
+}
+footer{      
+    bottom: 0; 
+    /* width: 100%; */
+    /* height: 45px; */
+    /* background: #6cf; */
+    margin:auto;
+    text-align: center;
+    position:fixed;
+    width:100%; 
+                 background-color: rgba(128,128, 128, 0.5);
+
+}
+.good {
+  background-color:#7FCA9F;
+
+  
+}
+
+.bad {
+  background-color:  #E96D63;
