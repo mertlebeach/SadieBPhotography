@@ -7,15 +7,15 @@
 					<figure class="tilter__figure">
 						<img class="tilter__image" src="background-10.jpg" alt="img01" />
 						<div class="tilter__deco tilter__deco--shine"><div></div></div>
-						<figcaption class="tilter__caption">
-							<h3 class="tilter__title">Movement</h3>
-							<p class="tilter__description">Caldwell, ID</p>
-						</figcaption>
+
 						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
 							<path d="M20.5,20.5h260v375h-260V20.5z" />
 						</svg>
 					</figure>
-				</a></div>
+				</a>
+ 							<h3 id="title">Movement</h3>
+ 						 </div>
+    
         <div class = "image">
             <a href = "gallery1.php">
                 <img src ="background-2.jpg"> second gallery</a></div>
