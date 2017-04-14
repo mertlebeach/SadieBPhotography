@@ -1,33 +1,4 @@
-<?php
-    include('header1.php');
-?>
-<div class="imagegallery"> 
-        <div class = "image1">
-            <a href="gallery1.php" class="tilter tilter--1">
-					<figure class="tilter__figure">
-						<img class="tilter__image" src="background-10.jpg" alt="img01" />
-						<div class="tilter__deco tilter__deco--shine"><div></div></div>
-						<figcaption class="tilter__caption">
-							<h3 class="tilter__title">Movement</h3>
-							<p class="tilter__description">Caldwell, ID</p>
-						</figcaption>
-						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-							<path d="M20.5,20.5h260v375h-260V20.5z" />
-						</svg>
-					</figure>
-				</a></div>
-        <div class = "image">
-            <a href = "gallery1.php">
-                <img src ="background-2.jpg"> second gallery</a></div>
-            <div class = "image1">
-            <a href="gallery1.php">
-                <img  src ="background-5.jpg" alt="sadie with tree">
-                third gallery</a></div>
-        <div class = "image">
-            <a href = "gallery1.php">
-                <img src ="background-4.jpg"> fourth gallery</a></div>
-        </div> 
-		<script>
+//For Image mouse over
 		(function() {
 			var tiltSettings = [
 			{},
@@ -194,14 +165,10 @@
 			}
 
 			// Preload all images.
-			imagesLoaded(document.querySelector('body'), function() {
+			 var images = new imagesLoaded(document.querySelector('body'), function() {
 				document.body.classList.remove('loading');
 				init();
 			});
 
  
 		})();
-		</script>
-<?php
-    include('footer.php');
-?>

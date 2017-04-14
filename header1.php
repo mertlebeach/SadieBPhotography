@@ -9,7 +9,12 @@
   <head>
       <!--Javascrip!-->
              <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-                   <script type="text/javascript" src="js/valid.js"></script>
+                   <script type="text/javascript" src="js/image_mouseover.js"></script>
+        <script type="text/javascript" src="js/main2.js"></script>
+              <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+              <script type="text/javascript" src="js/anime.min.js"></script>
+
+
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <!--Fonts-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -18,8 +23,12 @@
 	<link href='//fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Playfair+Display" rel="stylesheet">
-    <!--Stylesheet-->
-      	<link rel="stylesheet" type = "text/css" href = "style1.css">	
+    <!--Stylesheets-->
+      	<link rel="stylesheet" type = "text/css" href = "css/style1.css">	
+            	<link rel="stylesheet" type = "text/css" href = "css/normalize2.css">	
+       	<link rel="stylesheet" type = "text/css" href = "css/pater.css">	
+
+       	<link rel="stylesheet" type = "text/css" href = "css/component2.css">	
 
     </head>
  <body >
