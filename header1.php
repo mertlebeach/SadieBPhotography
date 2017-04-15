@@ -13,6 +13,9 @@
         <script type="text/javascript" src="js/main2.js"></script>
               <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
               <script type="text/javascript" src="js/anime.min.js"></script>
+             <script type ="text/javascript" src="js/main.js"></script>
+             <script type ="text/javascript" src="js/valid.js"></script>
+
 
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
@@ -28,12 +31,14 @@
             	<link rel="stylesheet" type = "text/css" href = "css/normalize2.css">	
        	<link rel="stylesheet" type = "text/css" href = "css/pater.css">	
 
-       	<link rel="stylesheet" type = "text/css" href = "css/component2.css">	
-
-    </head>
+       	<link rel="stylesheet" type = "text/css" href = "css/component2.css"> 	
+    <link rel="stylesheet" type = "text/css" href = "css/normalize.css"> 
+	<link rel="stylesheet" type = "text/css" href = "css/component.css">
+      </head>
  <body >
-     <header>
-    <div id="header">
+          <div id= "top">
+
+     <div id="header">
      <div id ="logo">
 	 <a id="anchorl" href="index.php"><div id ="logo1"> Sadie B</div> <div id = "logo2">Photography</div></a> 
      </div>
@@ -73,5 +78,5 @@
       </ul>
      </div>
     </div>
-         </header>
-     
+             </div>
+
