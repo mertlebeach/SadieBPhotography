@@ -1,8 +1,9 @@
 
 body{ 
-  background: url("../background-29.jpg") no-repeat fixed; 
+ /* background: url("../background-8.jpg") no-repeat fixed; */
     background-size:cover;
-        font-weight:lighter;
+    background-color:white;
+         font-weight:lighter;
 	font-family: 'Roboto', 'Avenir Next', sans-serif; 
     margin:0;
     padding-left:3%;
@@ -25,7 +26,8 @@ body{
 
     float:left;
     box-shadow: 0 2px 3px  #888888;
-    background-color: rgba(128,128, 128, 0.3);
+    background-color: lightgray;
+    opacity:0.5;
     padding-bottom:10px;
 
 }

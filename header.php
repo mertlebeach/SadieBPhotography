@@ -77,6 +77,6 @@
     </div>
     </div>
     
-      <div class= "segmenter" style="background-image: url('background-29.jpg')"> </div>
+      <div class= "segmenter" style="background-image: url('background-8.jpg')"> </div>
       
 
