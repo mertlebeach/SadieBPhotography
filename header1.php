@@ -36,8 +36,7 @@
 	<link rel="stylesheet" type = "text/css" href = "css/component.css">
       </head>
  <body >
-          <div id= "top">
-
+ 
      <div id="header">
      <div id ="logo">
 	 <a id="anchorl" href="index.php"><div id ="logo1"> Sadie B</div> <div id = "logo2">Photography</div></a> 
@@ -78,5 +77,5 @@
       </ul>
      </div>
     </div>
-             </div>
-
+          
+ 

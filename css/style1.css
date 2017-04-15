@@ -9,7 +9,13 @@ body{
     padding-left:3%;
     padding-right:3%;
  }
+ #top{
+    margin:0;
+    padding-left: 3%;
+    padding-right:3%;
+        position:absolute;
  
+}
 #cats{
     
     width:100%;
@@ -21,8 +27,7 @@ body{
 }
 #header{
     width:20%;
-    min-width:80px; 
-        max-width:250px;
+         width:250px;
 
     float:left;
     box-shadow: 0 2px 3px  #888888;
