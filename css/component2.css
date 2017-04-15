@@ -96,9 +96,9 @@
  
 .tilter__title {
 	margin: 0;
-	font-weight: normal;
-	font-size: 2.5em;
- 	line-height: 1;
+ 	font-size: 2.5em;
+        font-weight:lighter;
+	font-family: 'Roboto', 'Avenir Next', sans-serif; 	line-height: 1;
 }
 
 .tilter__description {

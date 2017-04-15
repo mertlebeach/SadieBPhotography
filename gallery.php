@@ -20,7 +20,7 @@
         <div class = "image">
 <a href="gallery1.php" class="tilter tilter--1">
 					<figure class="tilter__figure">
-						<img class="tilter__image" src="background-15.jpg" alt="img02" />
+						<img class="tilter__image" src="background-21.jpg" alt="img02" />
 						<div class="tilter__deco tilter__deco--shine"><div></div></div>
 						<figcaption class="tilter__caption">
 							<h3 class="tilter__title">Shadows of the Past</h3>
