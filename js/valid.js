@@ -105,5 +105,12 @@ $(function(){
                   
              }); 
  
+ if(window.location.href.includes("index.php")){
+     console.log("does contain");
+     ('a').addClass("current");
+ 
+ }
+ 
+
  
 });

@@ -29,6 +29,10 @@ body{
 
 
 }
+.current{
+    font-size:150%;
+    color:pink;
+}
 #logo{
    width: 100%;  
    font-weight: lighter;

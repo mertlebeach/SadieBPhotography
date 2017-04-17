@@ -39,7 +39,7 @@
      <div id= "top">
     <div id="header">
      <div id ="logo">
-	 <a id="anchorl" href="index.php"><div id ="logo1"> Sadie B</div> <div id = "logo2">Photography</div></a> 
+	 <a href="/Sadie/index.php"><div id ="logo1"> Sadie B</div> <div id = "logo2">Photography</div></a> 
      </div>
      <div class = "nav">
                  <ul class="nav-class">
@@ -51,9 +51,9 @@
 
     ?>
        <?php } ?>
-        <li><a href="gallery.php">gallery</a></li>
-        <li><a href="details.php">about</a></li>
-	<li><a href="contact.php">contact</a></li>
+        <li id ="g"><a href="/Sadie/gallery.php">gallery</a></li>
+        <li id ="b"><a href="details.php">about</a></li>
+	<li id = "c"><a href="contact.php">contact</a></li>
             <?php
   if (!isset($_SESSION['name'])) {?>
          <li><a href="clients.php">admin login</a></li>
@@ -61,7 +61,7 @@
        <?php } ?>
             <?php
   if (isset($_SESSION['name'])) {?>
-    <li><a href="inquiries.php">inquiries</a></li>
+    <li id = "current_page"><a href="inquiries.php">inquiries</a></li>
 
   <form id="logout" action="logout.php" method="post" class="logout">
     <?php
